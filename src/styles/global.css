@@ -55,10 +55,10 @@
 
 /* Default dot color */
 .slick-dots li button::before {
-  @apply text-sm text-gray-800 dark:text-gray-300;
+  @apply text-indigo-400 dark:text-indigo-500;
 }
 
 /* Active dot color */
 .slick-dots li.slick-active button::before {
-  @apply text-primary opacity-100;
+  @apply  text-indigo-400 dark:text-indigo-500 opacity-100;
 }

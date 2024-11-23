@@ -29,16 +29,15 @@ const ProjectCarousel = ({ projects }) => {
     <div className="relative max-w-7xl mx-auto px-6 py-12 overflow-hidden">
       {/* Carousel Container */}
       <Slider {...settings} className="gap-6">
-        {" "}
-        {/* Add `gap` for spacing */}
         {projects.map((project, index) => (
           <div
             key={index}
-            className="flex-shrink-0 flex-grow basis-1/3 px-4" // Flexible size with spacing
+            className="flex-shrink-0 flex-grow basis-1/3 h-max px-4" // Maintain spacing
           >
             <Link
               to={`/projects#${project.fields.slug}`}
               className="card bg-gray-100 dark:bg-[#2c3a4e] hover:shadow-2xl transition-all"
+              title={project.frontmatter.title} // Tooltip on hover
             >
               <figure>
                 <img
@@ -47,20 +46,32 @@ const ProjectCarousel = ({ projects }) => {
                       .images.fallback.src
                   }
                   alt={project.frontmatter.title}
-                  className="w-full h-48 object-cover rounded-t-lg"
+                  className="w-full h-56 object-cover rounded-t-lg" // Increased image height
                 />
               </figure>
-              <div className="card-body flex flex-col items-center text-center">
-                <h2 className="card-title">
-                  {project.frontmatter.title}
+              <div className="card-body flex flex-col items-center text-center h-[320px] overflow-hidden">
+                <div className="flex items-center sm:flex-row">
+                  <h2
+                    className="card-title px-2 line-clamp-2"
+                    title={project.frontmatter.title} // Show full text on hover
+                  >
+                    {project.frontmatter.title}
+                  </h2>
                   {project.frontmatter.isNew && (
                     <div className="badge badge-secondary ml-2">NEW</div>
                   )}
-                </h2>
-                <p className="text-sm text-gray-700 dark:text-gray-300">
+                </div>
+                <p
+                  className="text-sm text-gray-700 dark:text-gray-300 m-2 line-clamp-1"
+                  title={project.frontmatter.description} // Show full description on hover
+                >
                   {project.frontmatter.description}
                 </p>
-                <div className="card-actions flex flex-wrap justify-center gap-2">
+                {/* Restrict tags to 2 lines */}
+                <div
+                  className="card-actions flex flex-wrap justify-center gap-2 max-h-5 overflow-hidden"
+                  title={project.frontmatter.tags.join(", ")} // Show all tags on hover
+                >
                   {project.frontmatter.tags.map(tag => (
                     <div
                       key={tag}
@@ -74,6 +85,7 @@ const ProjectCarousel = ({ projects }) => {
                   <Link
                     to={`/projects#${project.fields.slug}`}
                     className="text-sm link link-primary"
+                    title={`Learn more about ${project.frontmatter.title}`} // Tooltip on hover
                   >
                     Read More..
                   </Link>

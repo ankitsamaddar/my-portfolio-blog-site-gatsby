@@ -294,6 +294,7 @@ export const query = graphql`
         frontmatter {
           title
           description
+          isNew
           tags
           image {
             childImageSharp {

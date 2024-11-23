@@ -53,7 +53,7 @@ const ProjectsPage = ({ data, location }) => {
       <div className="max-w-7xl mx-auto px-6">
         <div className="mt-8 space-y-4 sm:space-y-6">
           {projects.map((project, index) => {
-            const { title, description, tags, link, image } =
+            const { title, description, tags, link, image, isNew } =
               project.frontmatter
             const slug = project.fields.slug
             const projectImage = getImage(image)
@@ -79,6 +79,9 @@ const ProjectsPage = ({ data, location }) => {
                   <div className="flex-1">
                     <h2 className="text-xl sm:text-2xl font-semibold text-gray-800 dark:text-gray-100">
                       {title}
+                      {isNew && (
+                        <div className="badge badge-secondary ml-2">NEW</div>
+                      )}
                     </h2>
                     <div className="flex flex-wrap gap-2 mt-2">
                       {tags.map(tag => (
@@ -163,6 +166,7 @@ export const query = graphql`
         frontmatter {
           title
           link
+          isNew
           description
           tags
           image {

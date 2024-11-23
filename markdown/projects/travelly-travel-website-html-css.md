@@ -3,11 +3,11 @@
 title: "Travelly: A Responsive Travel Website Built with HTML, CSS, Flexbox, and Media Queries"
 description: "Travelly is a beautifully designed, responsive travel website crafted using HTML, CSS, Flexbox, and media queries. Ensuring seamless mobile responsiveness, it offers an exceptional user experience across various devices, making it the perfect platform for exploring global travel options. 🌍 📱"
 tags: ["Responsive Web Design", "HTML", "CSS", "Flexbox", "Media Queries", "Travel Website", "Mobile Responsiveness", "Web Development"]
-image: ""
+link: "https://github.com/ankitsamaddar/travel-website-html-css"
+isNew: true
+image: "./assets/travelly-travel-website-html-css.png"
 
 ---
-
-# Travelly: A Responsive Travel Website
 
 ## Project Overview
 Travelly is a responsive travel website designed to provide users with a seamless experience across all devices. Built using HTML, CSS, Flexbox, and media queries, it ensures that users can explore travel options effortlessly, whether they're on a desktop or mobile device. 🌍 📱

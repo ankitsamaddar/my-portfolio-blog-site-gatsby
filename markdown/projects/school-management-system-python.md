@@ -3,7 +3,9 @@
 title: "School Management Software"
 description: "A comprehensive CRUD school management system developed using Python, PyQt6, Qt Designer, and MySQL. Manage student registration, attendance, exams, fees, and generate detailed reports effortlessly."
 tags: ["Python", "PyQt6", "MySQL", "School Management System", "CRUD Application"]
-image: "./assets/header.png"
+isNew: false
+link: "https://github.com/ankitsamaddar/school_management_pyqt"
+image: "./assets/school-management-system-python.png"
 
 ---
 

@@ -3,7 +3,9 @@
 title: "Smart Street Light Control System with 555 Timer IC, LDR, and Relay"
 description: "Implemented a smart street light control system using a 555 Timer IC, LDR, and relay for automated lighting based on ambient light levels. This project includes hardware and software components, focusing on electronic circuit design and simulation using Proteus. Ideal for controlling street lights efficiently in real-life applications."
 tags: ["Smart Street Light", "555 Timer IC", "LDR", "Relay", "Proteus Simulation", "Electronic Circuit Design"]
-image: "" 
+isNew: false
+link: "https://github.com/ankitsamaddar/smart-street-light-control-system-555-IC"
+image: "./assets/demonstration_image.png" 
 
 ---
 
