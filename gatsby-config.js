@@ -7,37 +7,153 @@
 /**
  * @type {import('gatsby').GatsbyConfig}
  */
+require("dotenv").config({
+  path: `.env.${process.env.NODE_ENV}`,
+})
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Default Starter`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
-    author: `@gatsbyjs`,
-    siteUrl: `https://gatsbystarterdefaultsource.gatsbyjs.io/`,
+    title: "Ankit Samaddar - Portfolio",
+    author: "Ankit Samaddar",
+    description: "Hi I'm Ankit. Welcome to my portfolio website.",
+    siteUrl: "https://www.ankitsamaddar.github.io",
+    image: "src/images/apple-touch-icon.png",
+    twitterUsername: "ankitsamaddar_",
   },
   plugins: [
     `gatsby-plugin-image`,
+    `gatsby-transformer-sharp`,
+    "gatsby-plugin-postcss",
+    `gatsby-plugin-sharp`,
+    // Catch links in markdown
+    `gatsby-plugin-catch-links`,
+    // Markdown process
+    {
+      resolve: `gatsby-transformer-remark`,
+      options: {
+        gfm: true,
+        footnotes: true,
+        excerpt_separator: `<!-- end -->`,
+        plugins: [
+          {
+            resolve: `gatsby-remark-images`,
+            options: {
+              maxWidth: 740,
+            },
+          },
+          {
+            resolve: `gatsby-remark-responsive-iframe`,
+            options: {
+              wrapperStyle: `margin-bottom: 1.0725rem`,
+            },
+          },
+          `gatsby-remark-copy-linked-files`,
+          {
+            resolve: `gatsby-remark-smartypants`,
+            options: {
+              dashes: `oldschool`,
+            },
+          },
+          // Embed in md using syntax `embed:javascript-code.js`
+          // {
+          //   resolve: `gatsby-remark-embed-snippet`,
+          //   options: {
+          //     directory: `${__dirname}/src/markdown/code-examples/`,
+          //   },
+          // },
+          `gatsby-remark-autolink-headers`,
+          `gatsby-remark-graphviz`,
+          `gatsby-remark-prismjs`,
+          `gatsby-remark-katex`,
+        ],
+      },
+    },
+    // Add the markdown sources
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        name: `images`,
-        path: `${__dirname}/src/images`,
+        name: `projects`,
+        path: `${__dirname}/markdown/projects`,
       },
     },
-    `gatsby-transformer-sharp`,
-    `gatsby-plugin-sharp`,
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `blogs`,
+        path: `${__dirname}/markdown/blogs`,
+      },
+    },
+    // Generate manifest.webmanifest, site installable as a Progressive Web App (PWA)
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `gatsby-starter-default`,
-        short_name: `starter`,
+        name: `Ankit Samaddar - Portfolio`,
+        short_name: `Ankit Samaddar`,
+        description: `Hi, I'm Ankit. Welcome to the my portfolio website.`,
+        lang: `en`,
         start_url: `/`,
-        background_color: `#663399`,
-        // This will impact how browsers show your PWA/website
-        // https://css-tricks.com/meta-theme-color-and-trickery/
-        // theme_color: `#663399`,
-        display: `minimal-ui`,
-        icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
+        background_color: `#ffffff`,
+        theme_color: `#663399`,
+        display: `standalone`,
+        icon: `src/images/apple-touch-icon.png`,
+        icons: [
+          {
+            src: "src/images/android-chrome-192x192.png",
+            sizes: "192x192",
+            type: "image/png",
+          },
+          {
+            src: "src/images/android-chrome-512x512.png",
+            sizes: "512x512",
+            type: "image/png",
+          },
+          {
+            src: "src/images/apple-touch-icon.png",
+            sizes: "180x180",
+            type: "image/png",
+          },
+          {
+            src: "src/images/favicon-32x32.png",
+            sizes: "32x32",
+            type: "image/png",
+          },
+          {
+            src: "src/images/favicon-16x16.png",
+            sizes: "16x16",
+            type: "image/png",
+          },
+        ],
+        icon_options: {
+          purpose: "any maskable",
+        },
+        theme_color_in_head: false, // Needed for light and dark theme
       },
     },
+    // Offline functionality
+    // {
+    //   resolve: `gatsby-plugin-offline`,
+    //   options: {
+    //     precachePages: [`/`, `/projects/`, `/blogs/*`, `/tags/*`, `contacts`],
+    //     workboxConfig: {
+    //       globPatterns: ["**/icon-path*"],
+    //     },
+    //   },
+    // },
+    // Google Tag Manager
+    {
+      resolve: "gatsby-plugin-google-tagmanager",
+      options: {
+        id: process.env.GATSBY_GOOGLE_TAGMANAGER_ID,
+
+        // Include GTM in development.
+        //
+        // Defaults to false meaning GTM will only be loaded in production.
+        includeInDevelopment: false,
+        // Defaults to false
+        enableWebVitalsTracking: true,
+      },
+    },
+    // Add sitemap and robots.txt
+    `gatsby-plugin-sitemap`,
+    `gatsby-plugin-robots-txt`,
   ],
 }

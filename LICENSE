@@ -1,14 +1,68 @@
-The BSD Zero Clause License (0BSD)
+GNU GENERAL PUBLIC LICENSE
+Version 3, 29 June 2007
 
-Copyright (c) 2020 Gatsby Inc.
+Copyright (C) 2007 Free Software Foundation, Inc.
+Everyone is permitted to copy and distribute verbatim copies of this license document, but changing it is not allowed.
 
-Permission to use, copy, modify, and/or distribute this software for any
-purpose with or without fee is hereby granted.
+Preamble
 
-THE SOFTWARE IS PROVIDED "AS IS" AND THE AUTHOR DISCLAIMS ALL WARRANTIES WITH
-REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF MERCHANTABILITY
-AND FITNESS. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR ANY SPECIAL, DIRECT,
-INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES WHATSOEVER RESULTING FROM
-LOSS OF USE, DATA OR PROFITS, WHETHER IN AN ACTION OF CONTRACT, NEGLIGENCE OR
-OTHER TORTIOUS ACTION, ARISING OUT OF OR IN CONNECTION WITH THE USE OR
-PERFORMANCE OF THIS SOFTWARE.
+The GNU General Public License is a free, copyleft license for software and other kinds of works. The license is intended to guarantee your freedom to share and change free software—to make sure the software is free for all its users. This General Public License applies to most software released by the Free Software Foundation and other software that is compatible with it.
+
+When we speak of free software, we are referring to freedom, not price. To protect your freedom, the GPL requires that modified versions of the software be distributed under the same license as the original. This ensures that the software remains free for all its users.
+
+1. Definitions
+
+- "This License" refers to the GNU General Public License, version 3.
+- "The Program" refers to any software or work that is distributed under the terms of this License.
+- "You" refers to any person who is granted rights under this License.
+- "Modified version" of the Program refers to any work that has been changed or adapted from the original.
+- "Source code" is the preferred form for making modifications to the Program.
+
+2. Basic Permissions
+
+You may:
+
+- Copy, distribute, and modify the Program, as long as the modified version is also licensed under this GNU GPL.
+- Copy and distribute the Program in source code or object code form.
+- Modify the Program and distribute your modifications, under the same terms as the original.
+- Convey the Program in a manner that others may use and modify it, ensuring that they can also have access to the source code.
+
+3. Protecting Users' Rights
+
+To protect your rights, we need to make restrictions that prevent others from denying you these freedoms or asking you to surrender them. For example, if you distribute copies or modified versions of the Program, you must pass on the same freedoms to others.
+
+4. Conveying Modified Source Versions
+
+If you distribute a modified version of the Program, you must:
+
+- Make it clear that you have modified the Program, by adding a prominent notice stating that you have changed it.
+- Distribute the source code of the modified version, or provide a written offer to provide the source code.
+- Keep the modified version under the terms of this GPL.
+
+5. No Additional Restrictions
+
+You may not impose any further restrictions on the rights granted by this License. For example, you may not impose a license that restricts further modification or redistribution.
+
+6. Distribution of License
+
+You must distribute a copy of this License along with any binary or source code that you distribute. The License should be included with any copies or modified versions of the Program, so recipients know their rights under this License.
+
+7. Patent Grant
+
+If you distribute a modified version of the Program, you grant the recipients of the software a patent license to make, use, and distribute your modifications.
+
+8. No Warranty
+
+The Program is distributed without any warranty. No one is responsible for damages or issues arising from the use of the software, whether they are from the original version or modified versions.
+
+9. Termination
+
+If you violate the terms of the GPL, your rights to use, distribute, and modify the software under this License are automatically terminated.
+
+10. Relicensing
+
+You are allowed to relicense the Program under any other terms if you have the explicit permission from the original copyright holder(s). However, you must still honor the terms of the GPL for any parts of the program that remain under this License.
+
+11. Further Conditions
+
+If you include any additional conditions on the program, they must not conflict with the rights granted by the GPL. You may not impose any further restrictions or conditions that reduce the effectiveness of this License.
