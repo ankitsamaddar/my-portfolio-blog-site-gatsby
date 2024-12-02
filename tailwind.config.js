@@ -1,8 +1,7 @@
-/** @type {import('tailwindcss').Config} */
-import daisyui from "daisyui"
+const daisyui = require("daisyui");
 
 module.exports = {
-  darkMode: "class", // Enables dark mode support
+  darkMode: "class",
   content: [
     "./src/pages/**/*.{js,jsx,ts,tsx}",
     "./src/components/**/*.{js,jsx,ts,tsx}",
@@ -15,10 +14,10 @@ module.exports = {
             color: "inherit",
             maxWidth: "100%",
             a: {
-              color: "#4F46E5", // (indigo-500)
+              color: "#4F46E5",
               textDecoration: "underline",
               "&:hover": {
-                color: "#4338CA", // (indigo-600)
+                color: "#4338CA",
               },
             },
             h1: {
@@ -38,9 +37,9 @@ module.exports = {
         invert: {
           css: {
             a: {
-              color: "#5B21B6", //  (indigo-600)
+              color: "#5B21B6",
               "&:hover": {
-                color: "#4C1D95", // (indigo-700)
+                color: "#4C1D95",
               },
             },
           },
@@ -48,8 +47,5 @@ module.exports = {
       },
     },
   },
-  plugins: [
-    daisyui,
-    require("@tailwindcss/typography"),
-  ],
-}
+  plugins: [daisyui],
+};
