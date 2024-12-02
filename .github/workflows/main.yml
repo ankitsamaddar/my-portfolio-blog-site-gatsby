@@ -29,9 +29,17 @@ jobs:
           restore-keys: |
             ${{ runner.os }}-node-
 
-      - run: npm ci
-      - run: npm run format
-      - run: npm run build
+      - name: Install Project Dependencies
+        run: npm ci
+
+      - name: Format the Project
+        run: npm run format
+
+      - name: Install Gatsby CLI
+        run: npm install -g gatsby-cli@latest
+
+      - name: Build Gatsby Site
+        run: gatsby build
 
       - name: Deploy to Repository
         uses: peaceiris/actions-gh-pages@v4
