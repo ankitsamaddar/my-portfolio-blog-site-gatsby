@@ -412,6 +412,6 @@ With these, your Gatsby site becomes more search-engine-friendly, boosting visib
 
 ## 🎉 Conclusion 🎉
 
-This portfolio with a blog site is a full-stack application built using Gatsby, Tailwind CSS, and Daisy UI. It includes dynamic content generation, SEO optimizations, and analytics integration. I'm looking for opportunities as a web developer, so feel free to contact me at [your-email@example.com](mailto:your-email@example.com). Let's connect and create something amazing together! 🌟
+This portfolio with a blog site is a full-stack application built using Gatsby, Tailwind CSS, and Daisy UI. It includes dynamic content generation, SEO optimizations, and analytics integration. I'm looking for opportunities as a web developer, so feel free to contact me at [ankitsam0602@gmail.com](mailto:ankitsam0602@gmail.com). Let's connect and create something amazing together! 🌟
 
 Thanks for joining me on this journey. Happy coding! 🚀👩‍💻👨‍💻

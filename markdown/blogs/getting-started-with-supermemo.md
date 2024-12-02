@@ -269,4 +269,6 @@ We can change element type from the Element window which can be activated using 
 
 Congratulations! You've successfully set up and optimized Supermemo for effective learning. This setup will enhance your study sessions, making them more efficient and enjoyable. Happy learning! 🎉
 
-This guide is designed to be comprehensive yet easy to follow, ensuring that even beginners can set up Supermemo without any hassle. If you found this guide helpful, don't forget to share it with your fellow learners!
+I'm looking for opportunities as a web developer, so feel free to contact me at [ankitsam0602@gmail.com](mailto:ankitsam0602@gmail.com). Let's connect and create something amazing together! 🌟
+
+If you found this guide helpful, don't forget to share it with your fellow learners!

@@ -176,4 +176,6 @@ This command launches Windows Terminal in the current directory.
 
 Congratulations! You've successfully set up Windows Terminal in Windows 10. This setup will enhance your command-line experience, making it more efficient and enjoyable. Happy coding! 🎉
 
-This guide is designed to be comprehensive yet easy to follow, ensuring that even beginners can set up Windows Terminal without any hassle. If you found this guide helpful, don't forget to share it with your fellow developers!
+I'm looking for opportunities as a web developer, so feel free to contact me at [ankitsam0602@gmail.com](mailto:ankitsam0602@gmail.com). Let's connect and create something amazing together! 🌟
+
+If you found this guide helpful, don't forget to share it with your fellow developers!

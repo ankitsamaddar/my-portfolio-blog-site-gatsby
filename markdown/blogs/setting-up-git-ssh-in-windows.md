@@ -142,4 +142,6 @@ ssh-rsa H91WNCG6pvy9Yf9MREkOZQHcWIuAsH8uJvTTbqm1eAY2g34FjarRdqZIpvdxkrErDHqh4k42
 
 Congratulations! You've successfully set up Git SSH in Windows. This setup will allow you to interact with your GitHub repositories securely and efficiently. Happy coding! 🎉
 
-This guide is designed to be comprehensive yet easy to follow, ensuring that even beginners can set up Git SSH without any hassle. If you found this guide helpful, don't forget to share it with your fellow developers!
+I'm looking for opportunities as a web developer, so feel free to contact me at [ankitsam0602@gmail.com](mailto:ankitsam0602@gmail.com). Let's connect and create something amazing together! 🌟
+
+If you found this guide helpful, don't forget to share it with your fellow developers!

@@ -264,3 +264,5 @@ Power(avg):  0.6177999563430049 Delay:  24.700000000000003 ns
 ## **Conclusion**
 
 In this guide we walked through the process of setting up PySpice, designing an efficient 10T full-adder using Pass-Transistor Logic (PTL), and simulating it using the PTM 16nm library. By following these steps, you can write and simulate your circuits in Python. Happy simulating! 🎉
+
+I'm looking for opportunities as a web developer, so feel free to contact me at [ankitsam0602@gmail.com](mailto:ankitsam0602@gmail.com). Let's connect and create something amazing together! 🌟
