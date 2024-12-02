@@ -93,7 +93,7 @@ const Layout = ({ children }) => {
 
             {/* View Source */}
             <a
-              href="https://github.com/ankitsamaddar/ankitsamaddar.github.io"
+              href="https://github.com/ankitsamaddar/my-portfolio-blog-site-gatsby"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-2 text-xm text-blue-500 hover:underline hover:text-indigo-500 dark:hover:text-indigo-400 transition"
