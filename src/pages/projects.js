@@ -158,7 +158,7 @@ const ProjectsPage = ({ data, location }) => {
 
 export const query = graphql`
   query {
-    allMarkdownRemark(filter: { fileAbsolutePath: { regex: "/projects/" } }) {
+    allMarkdownRemark(filter: { fileAbsolutePath: { regex: "/projects/" } }, sort: { frontmatter: { isNew: DESC } }) {
       nodes {
         fields {
           slug

@@ -28,6 +28,8 @@ exports.onCreateNode = ({ node, actions, getNode }) => {
     } else if (sourceInstanceName === "projects") {
       // Create slugs for projects
       slug = `${path.basename(fileNode.relativePath, ".md")}`;
+
+
     }
 
     createNodeField({

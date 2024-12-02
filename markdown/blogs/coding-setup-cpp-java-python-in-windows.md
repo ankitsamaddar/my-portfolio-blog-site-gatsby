@@ -163,7 +163,7 @@ You should see the installed JDK version.
 {
   "code-runner.executorMap": {
     "java": "cd $dir ; clear && javac $fileName && java $fileNameWithoutExt && Remove-Item $fileNameWithoutExt.class ",
-    "cpp": "cd $dir ; clear && g++ $fileName -o $fileNameWithoutExt.exe && .\\$fileNameWithoutExt.exe && Remove-Item $fileNameWithoutExt.exe",
+    "cpp": "cd $dir ; clear && g++ $fileName -o $fileNameWithoutExt.exe && .\\$fileNameWithoutExt.exe && Remove-Item $fileNameWithoutExt.exe"
   }
 }
 ```
