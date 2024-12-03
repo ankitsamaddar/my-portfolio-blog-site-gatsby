@@ -40,7 +40,7 @@ This portfolio site is built from scratch using the Gatsby starter template. It 
 │   │   ├── header.js
 │   │   ├── layout.js
 │   │   ├── projectCarousel.js
-│   │   ├── Seo.js
+│   │   ├── SeoComponent.js
 │   │   ├── socialLinks.js
 │   │   └── techIconGrid.js
 │   ├── pages

@@ -1,7 +1,7 @@
 import React from "react"
 import { Link } from "gatsby"
 import Breadcrumbs from "../components/breadcrumbs"
-import Seo from "../components/Seo"
+import SeoComponent from "../components/seoComponent"
 
 const NotFoundPage = () => {
   const breadcrumbItems = [
@@ -36,7 +36,7 @@ const NotFoundPage = () => {
 export const Head = ({ location }) => {
 
   return (
-    <Seo
+    <SeoComponent
       title="404 Not Found - Ankit Samaddar"
       description="Oops! The page you're looking for couldn't be found."
       pathname={location.pathname}

@@ -1,7 +1,7 @@
 import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
 
-const Seo = ({
+const SeoComponent = ({
   title,
   description,
   pathname,
@@ -117,4 +117,4 @@ const Seo = ({
   )
 }
 
-export default Seo
+export default SeoComponent

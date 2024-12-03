@@ -1,7 +1,7 @@
 import React from "react"
 import { graphql, Link } from "gatsby"
 import Breadcrumbs from "../components/breadcrumbs"
-import Seo from "../components/Seo"
+import SeoComponent from "../components/seoComponent"
 
 const TagTemplate = ({ data }) => {
   const { fieldValue: tag, totalCount } = data.allMarkdownRemark.group[0]
@@ -242,7 +242,7 @@ export const Head = ({ data, location }) => {
   }
 
   return (
-    <Seo
+    <SeoComponent
       title={`Posts Tagged: ${tag}`}
       description={`Explore blogs and projects tagged with "${tag}"`}
       pathname={webUrl + location.pathname}

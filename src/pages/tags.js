@@ -1,7 +1,7 @@
 import React from "react"
 import { graphql, Link } from "gatsby"
 import Breadcrumbs from "../components/breadcrumbs"
-import Seo from "../components/Seo"
+import SeoComponent from "../components/seoComponent"
 
 const TagsPage = ({ data }) => {
   const tags = data.allMarkdownRemark.group
@@ -112,7 +112,7 @@ export const Head = ({ data, location }) => {
   }
 
   return (
-    <Seo
+    <SeoComponent
       title="Tags - Ankit Samaddar"
       description="Explore insightful tags that cover a range of topics including technology, design, development, and more."
       pathname={webUrl+location.pathname}

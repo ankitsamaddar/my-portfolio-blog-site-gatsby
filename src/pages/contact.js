@@ -1,7 +1,7 @@
 import React from "react"
 import ContactForm from "../components/contactForm"
 import Breadcrumbs from "../components/breadcrumbs"
-import Seo from "../components/Seo"
+import SeoComponent from "../components/seoComponent"
 
 const ContactPage = () => {
   const breadcrumbItems = [
@@ -123,7 +123,7 @@ export const Head = ({ location }) => {
   }
 
   return (
-    <Seo
+    <SeoComponent
       title="Contact Me - Ankit Samaddar"
       description="Reach out to me via LinkedIn or email for any collaboration or opportunity. I'm eager to connect!"
       pathname={"https://ankitsamaddar.github.io" + location.pathname}

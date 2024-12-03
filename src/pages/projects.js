@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react"
 import { graphql, navigate } from "gatsby"
 import { GatsbyImage, getImage } from "gatsby-plugin-image"
 
-import Seo from "../components/Seo"
+import SeoComponent from "../components/seoComponent"
 import Breadcrumbs from "../components/breadcrumbs"
 
 const ProjectsPage = ({ data, location }) => {
@@ -236,7 +236,7 @@ export const Head = ({ data, location }) => {
   const schemaMarkup = [websiteSchema, ...projectSchemas]
 
   return (
-    <Seo
+    <SeoComponent
       title="Projects - Ankit Samaddar Portfolio"
       description="Hi I'm Ankit. Explore my projects with detailed information and source code."
       pathname={webUrl+location.pathname}

@@ -5,7 +5,7 @@ import ContactForm from "../components/contactForm"
 import TechIconGrid from "../components/techIconGrid"
 import ProjectCarousel from "../components/projectCarousel"
 import SocialLinks from "../components/socialLinks"
-import Seo from "../components/Seo"
+import SeoComponent from "../components/seoComponent"
 
 const Home = ({ data }) => {
   const projects = data.projects.nodes
@@ -436,7 +436,7 @@ export const Head = ({ data, location }) => {
   }
 
   return (
-    <Seo
+    <SeoComponent
       description="Explore my projects, read my blogs, and learn more about me."
       schemaMarkup={schemaMarkup}
     />

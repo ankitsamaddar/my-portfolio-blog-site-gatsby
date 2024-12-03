@@ -3,7 +3,7 @@ import { graphql, Link } from "gatsby"
 import { GatsbyImage } from "gatsby-plugin-image"
 import { useState } from "react"
 import Breadcrumbs from "../components/breadcrumbs"
-import Seo from "../components/Seo"
+import SeoComponent from "../components/seoComponent"
 
 const BlogsPage = ({ data }) => {
   const blogs = data.allMarkdownRemark.nodes
@@ -203,7 +203,7 @@ export const Head = ({ data, location }) => {
   }
 
   return (
-    <Seo
+    <SeoComponent
       title="Blogs - Ankit Samaddar"
       description="Explore my latest blogs on technology, design, and development."
       pathname={webUrl+location.pathname}

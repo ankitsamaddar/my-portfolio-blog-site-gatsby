@@ -2,7 +2,7 @@ import React from "react"
 import { Link, graphql } from "gatsby"
 import { GatsbyImage, getImage } from "gatsby-plugin-image"
 import Breadcrumbs from "../components/breadcrumbs"
-import Seo from "../components/Seo"
+import SeoComponent from "../components/seoComponent"
 import GraphComment from "../components/graphComment"
 
 const BlogTemplate = ({ data, pageContext }) => {
@@ -264,7 +264,7 @@ export const Head = ({ data, location }) => {
   }
 
   return (
-    <Seo
+    <SeoComponent
       title={title}
       description={description}
       pathname={webUrl + location.pathname}

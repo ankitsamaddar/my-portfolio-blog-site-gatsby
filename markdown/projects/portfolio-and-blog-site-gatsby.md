@@ -26,7 +26,7 @@ This portfolio site is built from scratch using the Gatsby starter template. It 
 │   │   ├── contactForm.js
 │   │   ├── graphComment.js
 │   │   ├── projectCarousel.js
-│   │   ├── Seo.js
+│   │   ├── SeoComponent.js
 │   │   ├── ....
 │   ├── pages
 │   │   ├── 404.js
