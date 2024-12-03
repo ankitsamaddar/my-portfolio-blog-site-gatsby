@@ -57,7 +57,7 @@ module.exports = {
           // {
           //   resolve: `gatsby-remark-embed-snippet`,
           //   options: {
-          //     directory: `${__dirname}/src/markdown/code-examples/`,
+          //     directory: `${__dirname}/static/markdown/code-examples/`,
           //   },
           // },
           `gatsby-remark-autolink-headers`,
@@ -94,30 +94,30 @@ module.exports = {
         background_color: `#ffffff`,
         theme_color: `#663399`,
         display: `standalone`,
-        icon: `images/apple-touch-icon.png`,
+        icon: `static/images/apple-touch-icon.png`,
         icons: [
           {
-            src: "images/android-chrome-192x192.png",
+            src: "static/images/android-chrome-192x192.png",
             sizes: "192x192",
             type: "image/png",
           },
           {
-            src: "images/android-chrome-512x512.png",
+            src: "static/images/android-chrome-512x512.png",
             sizes: "512x512",
             type: "image/png",
           },
           {
-            src: "images/apple-touch-icon.png",
+            src: "static/images/apple-touch-icon.png",
             sizes: "180x180",
             type: "image/png",
           },
           {
-            src: "images/favicon-32x32.png",
+            src: "static/images/favicon-32x32.png",
             sizes: "32x32",
             type: "image/png",
           },
           {
-            src: "images/favicon-16x16.png",
+            src: "static/images/favicon-16x16.png",
             sizes: "16x16",
             type: "image/png",
           },
