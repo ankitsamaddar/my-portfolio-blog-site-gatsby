@@ -33,7 +33,7 @@ jobs:
             ${{ runner.os }}-node-
 
       - name: Install Project Dependencies
-        run: npm ci
+        run: npm ci --legacy-peer-deps
 
       - name: Format the Project
         run: npm run format
