@@ -7,7 +7,7 @@
   "dependencies": {
     "@tailwindcss/line-clamp": "^0.4.4",
     "dotenv": "^16.4.7",
-    "gatsby": "^5.14.0",
+    "gatsby": "^5.14.1",
     "gatsby-plugin-catch-links": "^5.14.0",
     "gatsby-plugin-google-tagmanager": "^5.14.0",
     "gatsby-plugin-image": "^3.14.0",
